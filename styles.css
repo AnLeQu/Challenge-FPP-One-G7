@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&family=Skranji:wght@400;700&display=swap');
+
+:root {
+    --color-primario: #E5E5E5;
+    --color-secundario: #FFFFFF;
+    --color-terciario: #0A3871;
+    --color-advertencias: #495057;
+    --color-cuaternario: #D8DFE8;
+
+    --font-signika: 'Signika', sans-serif;
+    --font-skranji: 'Skranji', cursive;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    
+    --size-8px: 0.5rem;
+    --size-16px: 1rem;
+    --size-24px: 1.5rem;
+    --size-32px: 2rem;
+    --size-40px: 2.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-signika);
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-logo {
+    width: 10%;
+    border: 2px solid var(--color-terciario);
+    border-radius: 50%;
+}
+
+.container {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-terciario);
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: var(--size-16px);
+    font-family: var(--font-signika);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--size-16px);
+    font-family: var(--font-signika);
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-cuaternario);
+}
+
+#copyBtn {
+    background-color: #008CBA;
+    margin-top: 10px;
+}
+
+.input-section, .output-section {
+    margin-bottom: 20px;
+}
+
+.info-redes, .enlaces {
+    font-family: var(--font-signika);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--size-24px);
+}
+
+.enlaces-link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-terciario);
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: var(--size-16px);
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    transition: background-color 0.3s ease;
+}
+
+.enlaces-link:hover {
+    background-color: var(--color-cuaternario);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-advertencias);
+    color: var(--color-secundario);
+    text-align: center;
+    font-size: var(--size-16px);
+    font-weight: var(--font-weight-regular);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

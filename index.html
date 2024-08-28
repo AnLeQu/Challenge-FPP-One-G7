@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="header-logo" src="./assets/channels4_profile-768x768.jpeg" alt="Logo de Alura">
+        <h1 class="titulo">Encriptador de textos</h1>
+    </header>
+    <div class="container">
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="buttons">
+                <button id="encryptBtn" onclick="encriptar()">Encriptar</button>
+                <button id="decryptBtn" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <textarea id="outputText" readonly placeholder="Resultado aparecerá aquí..."></textarea>
+            <button id="copyBtn">Copiar</button>
+        </div>
+    </div>
+    <div class="enlaces">
+        <h2 class="info-redes">Accede a mis redes</h2>
+        <a class="enlace-link" href="https://github.com/AnLeQu/">
+            <img src="./assets/github.png">
+            Github
+        </a>
+        <a class="enlace-link" href="https://www.linkedin.com/in/anlequ/">
+            <img src="./assets/linkedin.png">
+            Linkedin
+        </a>
+    </div>
+    <footer>
+        <p>Andrés D. León Quesada | Alura | FPP Oracle One G7 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
